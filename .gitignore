@@ -52,8 +52,8 @@ _ReSharper*/
 ~$*
 
 #Nuget packages
-/src/packages/**/
-!/src/packages/repositories.config
+*/packages/**/
+!*/packages/repositories.config
 publish*
 packer*
 Misc*

@@ -1,0 +1,47 @@
+﻿body 
+{
+	background-color: rgb(150, 255, 150);
+}
+
+.fizzbuzz_display {
+	background-color: white;
+	padding: 1em;
+	margin-top: 2em;
+	
+	width: 80%;
+	height: auto;
+	horiz-align: center;
+	
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.fizzbuzz_display span {
+	padding: 0.5em;
+	margin: 0.5em;
+	width: 5em;
+	display: inline-block;
+	text-align: center;	
+	
+	background-color: rgb(20, 200, 255);
+	box-shadow: inset 0px 2px 13px blueviolet;
+	-moz-box-shadow: inset 0px 2px 13px blueviolet;
+	-webkit-box-shadow: inset 0px 2px 13px blueviolet;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+
+span.Fizz {
+	background-color: yellow;
+}
+
+span.Buzz {
+	background-color: plum;
+}
+
+span.FizzBuzz {
+	background-color: orange;
+}
