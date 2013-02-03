@@ -1,5 +1,6 @@
-﻿@{
-    ViewBag.Title = "Fizz Buzz";
+﻿@model Fizzle.Models.FizzBuzzModel
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -8,16 +9,16 @@
     <form class="" method="post" target="" action="/" enctype="multipart/form-data">
         <div>
             <label for="first">Show FizzBuzz Sequence From:</label>
-            <input type="text" name="first" value=@ViewBag.First />
+            <input type="text" name="first" value="@Model.First"/>
             <label for="last">To</label>
-            <input type="text" name="last" value=@ViewBag.Last />
+            <input type="text" name="last" value="@Model.Last"/>
             <input type="submit" value=" Go fizz " />
         </div>
     </form>
 </div>
 
 <div id="display" class="fizzbuzz_display">
-        @foreach (var item in ViewBag.Result)
+        @foreach (var item in Model.Results)
               {
                   <span class="@item">@item</span>
               } 

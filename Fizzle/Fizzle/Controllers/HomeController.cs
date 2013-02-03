@@ -1,16 +1,20 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using Fizzle.Models;
 
 namespace Fizzle.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(string first="1", string last="30")
+        public ActionResult Index(int first=1, int last=30)
         {
-            string[] result = {};
-            ViewBag.First = first;
-            ViewBag.Last = last;
-            ViewBag.Result = result;
-            return View();
+            var model = new FizzBuzzModel
+                {
+                    First = first,
+                    Last = last,
+                    Results = new List<string>()
+                };
+            return View(model);
         }
 
         [HttpPost]
@@ -18,11 +22,15 @@ namespace Fizzle.Controllers
         {
             int first = int.Parse(collection["first"]);
             int last = int.Parse(collection["last"]);
-            ViewBag.First = collection["first"];
-            ViewBag.Last = collection["last"];
-            ViewBag.Result = new FizzBuzzer().Sequence(first, last).ToArray();
 
-            return View();
+            var model = new FizzBuzzModel
+            {
+                First = first,
+                Last = last,
+                Results = new FizzBuzzer().Sequence(first, last)
+            }; 
+
+            return View(model);
         }
 
         //[HttpPost]
