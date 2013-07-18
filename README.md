@@ -1,4 +1,4 @@
 Fizzer
 ======
 
-Demo mvc3 code for fizzbuzz
+Demo C# mvc3 code for fizzbuzz
