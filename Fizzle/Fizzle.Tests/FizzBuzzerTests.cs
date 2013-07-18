@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 
 namespace Fizzle.Tests
 {
@@ -24,8 +25,8 @@ namespace Fizzle.Tests
     [TestFixture]
     public class FizzBuzzSequenceTests
     {
-        [TestCase(1, 1, new string[]{"1"})]
-        [TestCase(1, 2, new string[]{"1", "2"})]
+        [TestCase(1, 1, new string[] {"1"})]
+        [TestCase(1, 2, new string[] {"1", "2"})]
         [TestCase(10, 16, new string[] { "Buzz", "11","Fizz", "13", "14", "FizzBuzz", "16"})]
         [TestCase(1, 0, new string[] { })]
         [TestCase(16, 2, new string[] { })]
