@@ -1,7 +1,8 @@
-### Fizzer
-======
-
-Demo C# mvc3 code for fizzbuzz
+# Fizzer
 
 
-## Author: Ann Witbrock with Helen Emerson and Anthony Steele
+## Demo C# mvc3 code for fizzbuzz
+
+=====
+
+### Author: Ann Witbrock with Helen Emerson and Anthony Steele
