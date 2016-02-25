@@ -1,6 +1,7 @@
 ﻿body 
 {
 	background-color: rgb(150, 255, 150);
+	color: #333;
 }
 
 .fizzbuzz_display {
